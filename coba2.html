@@ -1,0 +1,37 @@
+<SCRIPT> 	
+	function show(select_item) {
+		if (select_item == "apple") {
+			hiddenDiv.style.visibility='visible';
+			hiddenDiv.style.display='block';
+			Form.fileURL.focus();
+		} 
+		else{
+			hiddenDiv.style.visibility='hidden';
+			hiddenDiv.style.display='none';
+		}
+	}	
+</SCRIPT>  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coba2</title>
+</head>
+<body>
+	<label>Fruit:</label>
+	<select name="Fruit" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+		<option value='pear'>pear</option>
+		<option value='apple'>apple</option>
+		<option value='grapes'>grapes</option>
+	</select>
+
+	<div id='hiddenDiv'>
+		<label>Are you sure you want to eat the apple?</label>
+		<select name="AppleQuestion">
+			<option value='Yes'>Yes</option>
+			<option value='No'>No</option>
+		</select>
+	</div>
+</form>
+</body>
+</html>
+<form>
